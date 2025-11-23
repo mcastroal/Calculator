@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS file -->
+    <script defer src="script.js"></script>
+    <title>Document</title>
+    <!-- Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=BBH+Sans+Bogle&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&family=Space+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="calculator">
+        <input id="display" readonly>
+
+        <div id="calc-buttons">
+            <!-- Clear Button -->
+            <button onclick="clearDisplay()" class="operator clear">C</button>
+            <button onclick="addToDisplay('/')" class="operator">÷</button>
+            <!-- Row 2-->
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addToDisplay('*')" class="operator">x</button>
+            <!-- Row 3 -->
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('-')" class="operator">-</button>
+            <!-- Row 4 -->
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('+')" class="operator">+</button>
+            <!-- Row 5 -->
+            <button onclick="addToDisplay('.')">.</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="calculate()"class="equal">=</button>
+        </div>
+    </div>
+</body>
+</html>
