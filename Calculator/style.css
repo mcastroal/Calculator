@@ -49,11 +49,11 @@ button {
 }
 
 button:hover {
-    background-color: rgba(255, 0, 162, 0.271);
+    background-color: #f3d1ff;
 }
 
 button:active {
-    background-color: rgba(226, 43, 205, 0.304);
+    background-color: #d6a8f7;
 }
 
 .operator {
@@ -61,17 +61,30 @@ button:active {
 }
 
 .operator:hover {
-    background-color: rgba(255, 127, 193, 0.727);
+    background-color: #ffe6b3;
 }
 
 .operator:active {
-    background-color: blue;
+    background-color: #ffcc80;
 }
 
 .clear {
     grid-area:1/1/2/4;
     background-color: orange;
 }
+
+.clear:active {
+    background-color: #ff9966;
+}
+
 .equal {
     grid-column: span 2;
+}
+
+.equal:hover {
+    background-color: rgb(225, 155, 160);
+}
+
+.equal:active {
+    background-color: #ffb3deb1;
 }
